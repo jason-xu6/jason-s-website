@@ -3,174 +3,97 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jason Xu</title>
-	<style>
-	*{
-		padding:0;
-		margin:0;
-	}
-	#header{
-		width:100%;
-		height:868px;
-		background:url(images/bg0.jpg) no-repeat;
-	}
-	#uername{
-		padding-left:88px;
-		padding-top:38px;
-		font-size: 50px;
-		font-family:"Segoe Script";
-		font-weight: bold;
-		text-shadow: 2px 2px #245f6b;
-
-	}
-	#nav{
-		padding-left: 66px;
-		padding-top: 45px;
-	}
-	#nav ul li{
-		margin-left:140px;
-		text-align: center;
-	    height: 40px;
-	    width: 130px;
-	    float: left;
-	    font-size: 22px;
-	    font-family: "Segoe Print";
-	    font-weight: bold;
-	    list-style: none;
-	    transition:all 0.3s linear;
-	}
-	#nav ul li:hover{
-		background-color:#FFD670;
-	}
-	#nav ul li:hover a{
-		color:#000;
-	}
-	#nav ul li a{
-		text-decoration:none;
-		color:#fff;
-		transition:all 0.3s linear;
-	}
-	#centent{
-		width: 500px;
-	    height: 450px;
-	    text-align: center;
-	    margin-left: 420px;
-	    margin-top: 165px;
-
-	}
-	#centent .span{
-		font-family: "MV Boli";
-		font-size: 56px;
-		color:#fff;
-		height:60px;
-	}
-	#centent .span span{
-		font-weight: bold;
-	}
-	#born{
-		font-weight: 300;
-	    margin-top: 40px;
-	    font-size: 24px;
-	    color: #fff;
-	}
-	#logo{
-		margin-bottom:20px;
-	}
-	#centent ul{
-		width:300px;
-		height:100px;
-		margin-top:73px;
-		margin-left:130px;
-		position: relative;
-	}
-	#centent ul li{
-		float:left;
-		list-style: none;
-		width:80px;
-		height:50px;
-	}
-	#centent ul li img:hover{
-		opacity: 0.5;
-	}
-	#centent ul #la1{
-		display: block;
-		width: 100px;
-		height: 3px;
-		background-color: #7e7984;
-		position: absolute;
-		left: -84px;
-		top: 23px;
-	}
-	#centent ul #la2{
-		display: block;
-		width: 100px;
-		height: 3px;
-		background-color: #7e7984;
-		position: absolute;
-		right: -24px;
-		top: 23px;
-	}
-	#foot{
-		margin-top:100px;
-	}
-	#foot ul{
-		width: 1200px;
-		height: 100px;
-		margin-left: -15px;
-	}
-	#foot ul li{
-		list-style: none;
-		line-height:100px;
-		float: left;
-		margin-left: 230px;
-	}
-	#foot ul li a{
-		text-decoration:none;
-		color:#fff;
-		font-size: 22px;
-		font-family: "MV Boli";
-	}
-	#foot ul li span{
-		color: #FFD670;
-		display: inline-block;
-		height: 60px;
-	}
-	#foot ul li span:hover{
-		border-bottom:1px solid #FFD670;
-	}
-
-	</style>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="jquery-2.2.3.js"></script>
+    <script src="script/script.js"></script>
 </head>
 <body>
-	<div id="header">
-	    <audio src="music/bg.mp3"	autoplay="autoplay" loop="loop"></audio>
-		<div id="nav">
-			<ul>
-				<li><a href="">ABOUT</a></li>
-				<li><a href="">WORK</a></li>
-				<li><a href="">BLOG</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-		</div>
-		<div id="centent">
-			<div id="logo"><img src="images/logo.png" alt="This is logo"></div>
-			<div class="span">HELLO</div>
-			<div class="span">my name is <span>Jason</span></div>
-			<div id="born">I'm a web designer born in lincang.</div>
-			<ul>
-			    <label id="la1"></label>
-				<li><a href=""><img src="images/QQ.png" alt="QQ分享"></a></li>
-				<li><a href=""><img src="images/wechat.png" alt="wechat分享"></a></li>
-				<li><a href=""><img src="images/weibo.png" alt="微博分享"></a></li>
-				<label id="la2"></label>
-			</ul>
-		</div>
-		<div id="foot">
-			<ul>
-				<li><a href="">Age&nbsp:&nbsp<span>21</span></a></li>
-				<li><a href="">Country&nbsp:&nbsp<span>CHINA</span></a></li>
-				<li><a href="">Working a&nbsp:&nbsp<span>STUDY</span></a></li>
-			</ul>
-		</div>
-	</div>
+    <div id="wrap">
+        <div id="main-nav">
+        	<span>徐守杰</span>
+        	<div><img src="images/set.png"></div>
+        </div>
+    	<div id="header">
+    	    <span id="jasonxu">徐守杰</span>
+		    <audio src="music/bg.mp3"	autoplay="autoplay" loop="loop"></audio>
+			<div id="nav">
+				<ul>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">WORK</a></li>
+					<li><a href="">BLOG</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+			<div id="centent">
+				<div id="logo"><img src="images/logo.png" alt="This is logo"></div>
+				<div class="span">HELLO</div>
+				<div class="span">my name is <span>Jason</span></div>
+				<div id="born">I'm a web designer born in lincang.</div>
+				<ul>
+				    <label id="la1"></label>
+					<li><a href=""><img src="images/QQ.png" alt="QQ分享"></a></li>
+					<li><a href=""><img src="images/wechat.png" alt="wechat分享"></a></li>
+					<li><a href=""><img src="images/weibo.png" alt="微博分享"></a></li>
+					<label id="la2"></label>
+				</ul>
+			</div>
+			<div id="foot">
+				<ul>
+					<li>Age&nbsp:&nbsp<a href=""><span>21</span></a></li>
+					<li>Country&nbsp:&nbsp<a href=""><span>CHINA</span></a></li>
+					<li>Working at&nbsp:&nbsp<a href=""><span>STUDY</span></a></li>
+				</ul>
+			</div>
+	    </div>
+	    <div id="about">
+	    	<div id="account">
+	    		<img src="images/head.png" alt="Account">
+	    		<h3>ABOUT</h3>
+	    		<label></label>
+	    		<p>DO YOU WANT TO KNOW ME?</p>
+	    	</div>
+	    	<div id="me">
+	    		<div id="who">
+	    		<span>WHO I AM?</span><br><br>
+	    			Hello, my name is Jason, I'm a web designer born in Lincang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan elementum nunc.<br><br>
+
+							Sed nec elit urna. Nam porttitor elit nec sapien cursus, non feugiat mi tempus. Sed pellentesque nisi a magna gravida, vel aliquet arcu imperdiet.<br><br>
+
+							Cras vehicula libero eget turpis accumsan, non blandit felis tincidunt. Etiam non suscipit lectus. Cras et libero a libero lacinia semper et ac tortor. Nullam venenatis Dribbble nec imperdiet. Nulla tincidunt mauris Behance vestibulum, non hendrerit lacus condimentum
+                <ul>
+					<li><a href=""><img src="images/QQ.png" alt="QQ分享"></a></li>
+					<li><a href=""><img src="images/wechat.png" alt="wechat分享"></a></li>
+					<li><a href=""><img src="images/weibo.png" alt="微博分享"></a></li>
+				</ul>
+	    		</div>	    		<div id="image"><img src="images/shuaijie.jpg" alt="This is shuaijie"></div>
+	    		<div id="skill">
+	    			<h4>MY SKILL</h4>
+	    			<p>Design Programs</p>
+	    			<div class="percen">
+	    				<div class="height" id="ps">PHOTOSHOP<span>40%</span></div>
+	    			</div>
+	    			<div class="percen">
+	    				<div class="height" id="sublime">SUBLIME<span>70%</span></div>
+	    			</div>
+	    			<div class="percen">
+	    				<div class="height" id="github">GITHUB<span>60%</span></div>
+	    			</div>
+	    			<p>Coding Programs</p>
+	    			<div class="percen">
+	    				<div class="height" id="ps">HTML/HTML5<span>40%</span></div>
+	    			</div>
+	    			<div class="percen">
+	    				<div class="height" id="sublime">CSS/CSS3<span>70%</span></div>
+	    			</div>
+	    			<div class="percen">
+	    				<div class="height" id="github">JAVASCRIPT<span>60%</span></div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="work"></div>
+	    <div id="blog"></div>
+	    <div id="contact"></div>
+    </div>
 </body>
 </html>
