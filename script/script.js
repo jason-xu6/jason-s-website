@@ -26,3 +26,30 @@ $(document).ready(function(){
             });  
         });
 });
+
+$(document).ready(function(){
+    $("#main-nav img").mouseover(function()
+        {   
+             $("#nav-move").stop();  
+            $("#nav-move").animate({left: "1198px"});
+           
+        });
+    $("#main-nav img").mouseout(function()
+        {   
+             $("#nav-move").stop();  
+            $("#nav-move").animate({left: "1348px"});
+           
+        });
+    $("#nav-move").mouseover(function()
+        {   
+             $("#nav-move").stop();  
+            $("#nav-move").animate({left: "1198px"});
+           
+        });
+    $("#nav-move").mouseout(function()
+        {   
+             $("#nav-move").stop();  
+            $("#nav-move").animate({left: "1348px"});
+            
+        });
+});

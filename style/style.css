@@ -5,6 +5,7 @@
     #wrap{
         width:100%;
         position: relative;
+        overflow: hidden;
     }
 
 
@@ -343,7 +344,7 @@
     background-color:#2e1b4a;
     position: fixed;
     z-index: 999;
-    display: none;
+    display:;
 }
 
 #main-nav span{
@@ -369,17 +370,47 @@
 }
 
 
+/*右上角的设置*/
+#nav-move{
+    width: 150px;
+    height: 200px;
+    position: fixed;
+    left:1348px;
+    top: 40px;
+    background-color: #2e1b4a;
+    z-index: 88888;
+}
+#nav-move ul li{
+    text-align: center;
+    list-style: none;
+    line-height: 40px;
+}
+#nav-move ul li:hover{
+    background-color:#0b0414;
+}
+#nav-move ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+}
+
+
+
+
+
+
 /*这里是WORK页面*/
 #work{
     width:100%;
-    height:800px;
+    height:1400px;
     background-color:#ffd670;
     position: relative;
 }
 .account-f{
     text-align: center;
     position: relative;
-    top: 5%;
+    top: 4%;
+    height:15%;
 }
  .account-f h3{
     font-size: 2.3em;
@@ -393,13 +424,158 @@
     display: block;
     position: absolute;
     left: 48%;
-    top: 57%;
+    top: 46%;
+}
+#work .account-f label{
+    position:absolute;
+    left:48%;
+    top: 27%;
 }
 .account-f p{
     margin-top: 25px;
     font-size: 1.2em;
     color: #fff;
 }
+/*这里是work-cnetent页面*/
+#work-centent{
+    width:90%;
+    height:40%;
+    margin:0 auto;
+}
+
+/*这里是work中的项目页面*/
+#project{
+    float:left;
+    width:39%;
+    height:100%;
+    font-family:"微软雅黑";
+}
+#project-name{
+    width: 100%;
+    height: 14%;
+    border-bottom: 1px solid #fff;
+}
+#project-name span{
+    font-weight: 300;
+    display: block;
+    font-size: 15px;
+    color: #FFF1CE;
+    text-transform: uppercase;
+    margin-bottom: 0.7em;
+}
+#project-name p{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#project-description{
+    width:100%;
+    height:40%;
+    border-bottom:1px solid #fff;
+}
+#project-description ul{
+    height:33%;
+    width:80%;
+    margin-left:20%;
+    clear: both;
+}
+#project-description ul li{
+    clear: both;
+    width:50%;
+    list-style-type: circle;
+}
+#project-description ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    margin: 6px 0;
+}
+#project-description p{
+    color: #FFF1CE;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 1em 0;
+}
+#project-description span{
+    display: block;
+    width: 100%;
+    height: 37%;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    margin: 13px 0;
+    line-height: 27px;
+}
+
+
+
+#project-address{
+    width: 100%;
+    height: 18%;
+    border-bottom: 1px solid #fff;
+}
+#project-address span{
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 17px;
+    font-weight: 100;
+}
+#project-address p{
+    line-height: 56px;
+    margin-left: 42px;
+    color: #fff;
+    font-weight: 800;
+}
+
+
+#tags{
+    width:100%;
+    height:25%;
+}
+#tags span{
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 17px;
+    font-weight: 100;
+}
+#tags p{
+    line-height: 56px;
+    margin-left: 42px;
+    color: #fff;
+    font-weight: 800;
+}
+
+
+
+/*这里是work中的slide页面*/
+#slide{
+    float:left;
+    width:60%;
+    height:100%;
+}
+/*这里是work的photo页面*/
+#work-photo{
+    width:100%;
+    height:50%;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*这里是博客页面*/
