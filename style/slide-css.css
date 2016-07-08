@@ -4,13 +4,15 @@
 	margin-left:150px;
 }
 #main_slide{
-	    -webkit-user-select:none;
-		width:500px;
-		height:400px;
-		background-color:blue;
-		position: relative;
-		margin:100px auto;
-		overflow: hidden;
+	    -webkit-user-select: none;
+	    width: 500px;
+	    height: 400px;
+	    background-color: blue;
+	    position: relative;
+	    top: -40px;
+	    right: -30px;
+	    margin: 100px auto;
+	    overflow: hidden;
 	}
 	#list_slide{
 		width:3500px;

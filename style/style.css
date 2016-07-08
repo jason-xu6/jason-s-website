@@ -40,6 +40,7 @@
         font-weight: bold;
         list-style: none;
         transition:all 0.3s linear;
+        cursor:pointer;
     }
     #nav ul li:hover{
         background-color:#FFD670;
@@ -344,7 +345,7 @@
     background-color:#2e1b4a;
     position: fixed;
     z-index: 999;
-    display:;
+    display:none;
 }
 
 #main-nav span{
@@ -375,8 +376,8 @@
     width: 150px;
     height: 200px;
     position: fixed;
-    left:1348px;
-    top: 40px;
+    left:1349px;
+    top: 37px;
     background-color: #2e1b4a;
     z-index: 88888;
 }
@@ -411,6 +412,7 @@
     position: relative;
     top: 4%;
     height:15%;
+    z-index: 998;
 }
  .account-f h3{
     font-size: 2.3em;
@@ -556,6 +558,7 @@
 
 
 
+
 /*这里是work中的slide页面*/
 #slide{
     float:left;
@@ -564,8 +567,57 @@
 }
 /*这里是work的photo页面*/
 #work-photo{
-    width:100%;
+    width:90%;
     height:50%;
+    margin:0 auto;
+}
+
+#work-photo .photo{
+    height:300px;
+    width:300px;
+    float:left;
+    text-align: center;
+    position:relative;
+    overflow: hidden;
+    cursor:pointer;
+}
+#work-photo .photo img{
+    line-height: 250px;
+    width: 200px;
+    height: 200px;
+    transform: rotateZ(45deg);
+    margin-top: 50px;
+}
+#work-photo h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    line-height: 35px;
+}
+
+#work-photo .photo .caption{
+    position:absolute;
+    left:-100%;
+    top:136px;
+    width: 100%;
+    height: 45%;
+    transition: all 0.5s ease;
+    color:#ffd670;
+}
+#work-photo .photo .caption p{
+    font-size:22px;
+    font-weight: 500;
+}
+#work-photo .photo .caption img{
+    position: relative;
+    width: 20%;
+    height: 45%;
+    transform: rotateZ(0deg);
+    bottom: 25px;
+}
+#work-photo .photo:hover .caption{
+    left:0;
 }
 
 
@@ -594,6 +646,131 @@
 #blog .account-f p{
     color:#838baa;
 }
+
+/*博客页面的image页面*/
+#blog-header{
+    height:80%;
+    width:100%;
+}
+#blog-image{
+    height:100%;
+    width:47%;
+    position: relative;
+    float: left;
+}
+#blog-image img{
+    position: absolute;
+    left:0;
+    top:-100px;
+}
+/*博客页面的search页面*/
+#blog-search{
+    float: left;
+    width: 43%;
+    height: 100%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+#search-btn{
+    height:10%;
+    width:100%;
+}
+#search-btn p{
+    text-align: center;
+    width: 40%;
+    position: relative;
+    margin: 0 auto;
+}
+#search-submit{
+    border: none;
+    width: 28px;
+    background: url(../images/search.png) no-repeat;
+    height: 26px;
+    outline: none;
+    position: absolute;
+    right: -36px;
+    top: 11px;
+    cursor: pointer;
+}
+#search-txt{
+    font-size: 18px;
+    text-indent: 20px;
+    color: #ffd670;
+    border-radius: 8px 8px;
+    line-height: 45px;
+    outline: none;
+    border: none;
+    background: #F8F8F8;
+    width: 100%;
+    padding-right: 50px;
+}
+
+#blog-search input::-webkit-input-placeholder{
+    color:#ffd670;
+}
+#blog-search input:-moz-placeholder{
+　　color:#ffd670;
+}
+#blog-search input::-moz-placeholder{
+　　color:#ffd670;
+}
+#blog-search input:-ms-input-placeholder{
+　　color:#ffd670;
+}
+
+
+
+
+
+#article-top{
+    width:100%;
+    height:40%;
+    border:2px solid red;
+    z-index: 888;
+    border-radius:20px 20px;
+}
+#article-top ul li{
+    list-style: none;
+}
+#article-top ul li a{
+    text-decoration:none;
+    color:#ffd670;
+}
+#article-recommend{
+    width:100%;
+    height:40%;
+    border:2px solid blue;
+    z-index: 888;
+    margin-top:30px;
+    border-radius:20px 20px;
+}
+#article-recommend ul li{
+    list-style: none;
+}
+#article-recommend ul li a{
+    text-decoration:none;
+    color:#ffd670;
+}
+#blog-search h2{
+    line-height: 40px;
+    color: #ffd670;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+#blog-search ul{
+    margin-top:20px;
+}
+#blog-search ul li{
+    font-size: 1.3em;
+    text-align: center;
+    line-height:35px;
+}
+
+
+
+
+
 /*这里是联系页面*/
 #contact{
     width:100%;
@@ -601,6 +778,121 @@
     background-color:#9cabaf;
     position: relative;
 }
+
+
+#contact-contact{
+    width: 50%;
+    height: 20%;
+    margin:0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+#contact-contact span{
+    font-size: 26px;
+    color: #fff;
+    display: inline-block;
+    width: 60%;
+    position: relative;
+    top: 20px;
+}
+#contact-contact img{
+    position: relative;
+    top: 45px;
+}
+#mail{
+    float:left;
+    width:60%;
+}
+#phone{
+    float:left;
+    width: 40%;
+}
+
+
+
+
+
+
+
+/*联系页面的input*/
+#contact-form{
+    width:80%;
+    height:61%;
+    margin:0 auto;
+}
+#contact-form input{
+    color:#a09b9b;
+    font-size:18px;
+    text-indent:20px;
+    width: 49.5%;
+    height: 55px;
+    background-color: #7a7777;
+    border: none;
+    outline: none;
+    border-radius: 8px 8px;
+}
+#contact-form textarea{
+    color:#a09b9b;
+    font-size: 18px;
+    text-indent: 7px;
+    width: 97%;
+    height: 200px;
+    background-color: #7a7777;
+    border: none;
+    outline: none;
+    border-radius: 8px 8px;
+    margin-top: 45px;
+    padding: 15px;
+}
+
+#contact-form #send-submit{
+    color: #fff;
+    font-weight: 800;
+    font-size: 23px;
+    text-indent: 20px;
+    margin: 41px 31%;
+    width: 36.5%;
+    height: 55px;
+    background-color: #ffd670;
+    border: none;
+    outline: none;
+    border-radius: 8px 8px;
+    cursor:pointer;
+}
+
+#contact-form textarea::-webkit-input-placeholder{
+    font-size:20px;
+    font-weight: 800;    
+}
+#contact-form textarea:-moz-placeholder{
+　　font-size:20px;
+    font-weight: 800; 
+}
+#contact-form textarea::-moz-placeholder{
+　　font-size:20px;
+    font-weight: 800; 
+}
+#contact-form textarea:-ms-input-placeholder{
+　　font-size:20px;
+    font-weight: 800; 
+}
+
+
+
+#contact-form input::-webkit-input-placeholder{
+    font-size:18px;
+}
+#contact-form input:-moz-placeholder{
+　　font-size:18px;
+}
+#contact-form input::-moz-placeholder{
+　　font-size:18px;
+}
+#contact-form input:-ms-input-placeholder{
+　　font-size:18px;
+}
+
+
 
 /*这里是页脚页面*/
 #footer{
@@ -613,4 +905,28 @@
     font-size:18px;
     font-weight: 300;
     color:#AAAAAA;
+}
+
+
+
+
+
+/*右下角的div*/
+#foot-top{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background-color:#FFD670;
+    width:50px;
+    height:40px;
+    z-index: 9999;
+    color:#fff;
+    font-size:35px;
+    text-align: center;
+    cursor:pointer;
+    display: none;
+}
+
+#foot-top:hover{
+
 }
