@@ -3,9 +3,11 @@
         margin:0;
     }
     #wrap{
-        width:100%;
+        min-width: 1349px;
+        width:1349px;
         position: relative;
         overflow: hidden;
+        margin:0 auto;
     }
 
 
@@ -49,6 +51,7 @@
         color:#000;
     }
     #nav ul li a{
+        line-height: 40px;
         text-decoration:none;
         color:#fff;
         transition:all 0.3s linear;
