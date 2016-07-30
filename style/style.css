@@ -341,13 +341,26 @@
 
 
 /*上面的那个导航条*/
+
+#nav-top{
+    height:50px;
+    width:1349px;
+    position: fixed;
+    z-index: 56565656;
+}
+#guanli{
+    width:150px;
+    height:200px;
+    position: absolute;
+    overflow: hidden;
+    right:0px;
+}
 #main-nav{
     height:40px;
     width:1349px;
     background-color:#2e1b4a;
-    position: fixed;
-    z-index: 999;
-    display:none;
+    position: relative;
+    z-index:2523452345;
 }
 
 #main-nav span{

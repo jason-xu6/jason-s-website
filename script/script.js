@@ -34,20 +34,20 @@ $(document).ready(function(){
                 var sTop = $(window).scrollTop();  
                 sTop = parseInt(sTop);  
                 if (sTop >= 600) {  
-                    if (!$("#main-nav").is(":visible")) {  
+                    if (!$("#nav-top").is(":visible")) {  
                         try {  
-                            $("#main-nav").slideDown();  
+                            $("#nav-top").slideDown();  
                         } catch (e) {  
-                            $("#main-nav").show();  
+                            $("#nav-top").show();  
                         }                        
                     }  
                 }  
                 else {  
-                    if ($("#main-nav").is(":visible")) {  
+                    if ($("#nav-top").is(":visible")) {  
                         try {  
-                            $("#main-nav").slideUp();  
+                            $("#nav-top").slideUp();  
                         } catch (e) {  
-                            $("#main-nav").hide();  
+                            $("#nav-top").hide();  
                         }                         
                     }  
                 }   
@@ -104,28 +104,28 @@ $(document).ready(function(){
 
 /*右上角的nav*/
 $(document).ready(function(){
-    $("#main-nav div").mouseover(function()
+    $("#nav-top #set").mouseover(function()
         {   
              $("#nav-move").stop();  
-            $("#nav-move").animate({left: "1199px"});
+            $("#nav-move").animate({left: "0px"});
            
         });
-    $("#main-nav div").mouseout(function()
+    $("#nav-top #set").mouseout(function()
         {   
              $("#nav-move").stop();  
-            $("#nav-move").animate({left: "1349"});
+            $("#nav-move").animate({left: "150"});
            
         });
     $("#nav-move").mouseover(function()
         {   
              $("#nav-move").stop();  
-            $("#nav-move").animate({left: "1199px"});
+            $("#nav-move").animate({left: "0px"});
            
         });
     $("#nav-move").mouseout(function()
         {   
              $("#nav-move").stop();  
-            $("#nav-move").animate({left:"1349"});
+            $("#nav-move").animate({left:"150"});
             
         });
 });
