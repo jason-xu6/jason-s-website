@@ -347,6 +347,7 @@
     width:1349px;
     position: fixed;
     z-index: 56565656;
+    display: none;
 }
 #guanli{
     width:150px;
